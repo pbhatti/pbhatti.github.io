@@ -93,7 +93,7 @@ nav#menubar #logo{
 nav#menubar #menu{
 height:30px;
 float: left;
-
+color:white;
 }
 
 nav#menubar #menu ul{
@@ -102,10 +102,12 @@ nav#menubar #menu ul{
 	list-style:none;
 	position:relative;
 	left: 30px;
+	color:white;
 }
 
 nav#menubar #menu ul li{
 	list-style:none;
+	color:white;
     display: inline;
     text-align: center;
     float:right;
