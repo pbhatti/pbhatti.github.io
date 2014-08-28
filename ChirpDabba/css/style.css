@@ -6,17 +6,6 @@
 	text-decoration: none;
 }
 
-@media screen and (max-width: 1060px) {
-    #primary { width:67%; }
-    #secondary { width:30%; margin-left:3%;}  
-}
-
-/* Tabled Portrait */
-@media screen and (max-width: 768px) {
-    #primary { width:100%; }
-    #secondary { width:100%; margin:0; border:none; }
-}
-
 
 @font-face {
   font-family: 'MyWebFont';
@@ -644,5 +633,26 @@ width:80%;
 	float:left;
 	margin-right:40px;
 	margin-top:13px;
+}
+
+
+
+/* Small Screen */
+
+@media screen and (min-width: 480px) and (max-width: 1020px) {
+  	#container{
+	width: 100%;
+}
+
+img{
+	width: 100%;
+}
+ 
+#imgcontainer1{
+	width:50%;
+	background-image:url(../images/bg1.jpg);
+	position: left;
+}
+
 }
 

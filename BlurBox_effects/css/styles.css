@@ -1,0 +1,172 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* reset styling */
+
+body{
+	background: url('../imgs/bg.jpeg');
+}
+
+header h1{
+font-family:'Roboto';
+font-size:19px;
+background: #ddd;
+padding:30px;
+border-radius:6px;
+}
+
+.inner-container, .container{
+position:relative;
+width:930px;
+margin:30px auto;
+}
+
+.inner-container article{
+	display:block;
+	width:180px;
+	height:220px;
+	background:#fff;
+	cursor:pointer;
+	float:left;
+	border:10px solid #fff;
+	text-align:left;
+	text-transform:none;
+	margin:15px;
+	z-index: 1;
+	-webkit-backface-visibility:hidden;
+	box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 1),
+	1px 1px 3px 10px rgba(0,0,0,0.2);
+	-webkit-transition: opacity 0.4s linear;
+	-webkit-transform: 0.4s ease-in-out;
+	box-shadow: 0.4s ease-in-out;
+}
+
+.inner-container h3{
+	font-family: 'Roboto';
+	font-size: 14px;
+	margin-bottom:20px;
+	font-weight: 400;
+	color: rgba(0,0,0,1);
+	text-shadow: 0px 0px 0px #000;
+	opacity:0.8; 
+}
+
+.inner-container article p{
+	font-family: Verdana;
+	font-size: 11px;
+	line-height: 18px;
+	color:#333;
+	text-shadow:0px 0px 0px #000;
+	opacity:0.8;
+}
+
+/* content transition */
+.inner-container h3, .inner-container article p{
+	transition: 
+	opacity 0.2s linear,
+	text-shadow 0.5s ease-in-out, 
+	color 0.5s ease-in-out;
+	-webkit-transition:
+	opacity 0.2s linear,
+	text-shadow 0.5s ease-in-out,
+	color 0.5s ease-in-out;
+	-moz-transition:
+	opacity 0.2s linear,
+	text-shadow 0.5s ease-in-out,
+	color 0.5s ease-in-out;	
+}
+
+/* didnot understand this*/
+.inner-container:before,
+.inner-container:after{
+	content:"";
+	display:table;
+}
+
+.inner-container:after{
+	clear:both;
+}
+
+.inner-container article.blur h3{
+	text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+	color:rgba(0, 0, 0, 0.9);
+	opacity:0.5;
+}
+
+.inner-container article.blur p{
+	text-shadow: 0px 0px 10px rgba(51, 51, 51, 0.9);
+	color:rgba(51, 51, 51, 0);
+	opacity:0.5;
+}
+
+.inner-container article.active{
+	-webkit-transform:scale(1.05);
+	-moz-transform:scale(1.05);
+	-o-tranform:scale(1.05);
+	-ms-tranform:scale(1.05);
+	transform: scale(1.05);
+	box-shadow:
+	0px 0px 0px 10px rgba(255, 255, 255, 1),
+	1px 11px 15px 10px rgba(0,0,0,0.4);
+	z-index:100;
+	opacity:1;
+}
+
+.inner-container article.active h3,
+.inner-container article.active p{
+	opacity:1;
+}
+
+article p.client-name{
+	float:left;
+	color: #99cc66;
+	font-size:12px;
+	font-style:italic;
+	margin-top: 30px;
+}
+
+
+
+
+

@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta charset="utf8">
+		<title>Prototype</title>
+		<link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+	</head>
+	<body>
+		<div id="home" class="sc selected">
+			<ul>
+				<li class="link none" page-load="screen1"></li>
+				<li class="link slideup" page-load="screen2"></li>
+				<li class="link slideleft" page-load="screen3"></li>
+				<li class="link slideright" page-load="screen4"></li>
+				<li class="link slidedown" page-load="screen5"></li>
+				<li class="link 3dright" page-load="screen6"></li>
+				<li class="link 3dleft" page-load="screen7"></li>
+			</ul>
+		</div>
+		<div id="screen1" class="sc">
+			<header>
+				<a class="back link none" page-load="home">Back</a>
+				<h1>Screen 1</h1>
+			</header>
+		</div>
+		<div id="screen2" class="sc">
+			<header>
+				<a class="back link backdown" page-load="home">Back</a>
+				<h1>Screen 2</h1>
+			</header>
+		</div>
+		<div id="screen3" class="sc">
+			<header>
+				<a class="back link slideright" page-load="home">Back</a>
+				<h1>Screen 3</h1>
+			</header>
+		</div>
+		<div id="screen4" class="sc">
+			<header>
+				<a class="back link slideleft" page-load="home">Back</a>
+				<h1>Screen 4</h1>
+			</header>
+		</div>
+		<div id="screen5" class="sc">
+			<header>
+				<a class="back link backup" page-load="home">Back</a>
+				<h1>Screen 5</h1>
+			</header>
+		</div>
+		<div id="screen6" class="sc">
+			<header>
+				<a class="back" page-load="home">Back</a>
+				<h1>Screen 6</h1>
+			</header>
+		</div>
+		<div id="screen7" class="sc">
+			<header>
+				<a class="back" page-load="home">Back</a>
+				<h1>Screen 7</h1>
+			</header>
+		</div>
+	</body>
+</html>
